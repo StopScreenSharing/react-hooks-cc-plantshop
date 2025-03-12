@@ -11,11 +11,12 @@ function PlantPage() {
     .then(r => r.json())
     .then((plants) => setPlants(plants))
   }, [])
+
   return (
     <main>
       <NewPlantForm />
       <Search />
-      <PlantList />
+      <PlantList plants={plants}/>
     </main>
   );
 }
