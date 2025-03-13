@@ -42,11 +42,18 @@ function PlantPage() {
   });
   };
 
+  const handleDeletePlant = (plantId) => {
+    fetch(`http://127.0.0.1:6001/plants/${plantId}`, {
+      method: 'DELETE',
+    })
+    setPlants(plants.filter(plant => plant.id !== plantId));
+  }
+
   return (
     <main>
       <NewPlantForm onAddPlant={handleAddPlant}/>
       <Search onSearchChange={handleSearchChange}/>
-      <PlantList plants={filteredPlants}/>
+      <PlantList plants={filteredPlants} onDelete={handleDeletePlant}/>
     </main>
   );
 }
