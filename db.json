@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Barrel Cactus",
+      "image": "https://blackgold.bz/wp-content/uploads/sites/3/2016/10/potted-1.jpg",
+      "price": "2.09",
+      "id": 8
     }
   ]
 }

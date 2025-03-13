@@ -21,7 +21,7 @@ function PlantCard({ plant, onDelete }) {
       ) : (
         <button onClick={handleClick}>Out of Stock</button>
       )}
-      <button className="primary" onClick={handleDeleteClick}>Delete Plant</button>
+      <button onClick={handleDeleteClick}>Delete Plant</button>
     </li>
   );
 }
